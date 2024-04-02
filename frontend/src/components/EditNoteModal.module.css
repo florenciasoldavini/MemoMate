@@ -1,0 +1,131 @@
+/* EditNoteModal.module.css */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 500px;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.containerBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.containerLeft {
+    width: 50%;
+}
+
+.containerRight {
+    width: 50%;
+}
+
+.input {
+    margin: 0px;
+    padding: 0px;
+    width: 100%; 
+    height: auto;
+    display: flex;
+    justify-self: center;
+    border-color: transparent;
+    box-sizing: border-box; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-color: transparent; 
+    overflow: hidden; 
+    resize: none; 
+}
+
+:global(#title) {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+:global(#content) {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+:global(#title::placeholder) {
+    color: grey;
+}
+
+:global(#content::placeholder) {
+    color: grey;
+}
+
+.input:focus {
+    outline: none;
+    /* Remove the default focus outline */
+}
+
+.btn {
+    width: 200px;
+    height: 40px;
+    background-color: #6539D1;
+    border-color: transparent;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    ;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btnClear {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #6539D1;
+    text-decoration: none;
+    font-size: 20px;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}

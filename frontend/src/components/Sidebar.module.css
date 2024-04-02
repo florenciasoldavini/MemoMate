@@ -1,0 +1,25 @@
+/* Sidebar.module.css */
+.sidebar {
+    width: 20%;
+    padding-top: 50px;
+}
+
+.iconWrapper {
+    padding-left: 50px; /* Adjust the padding as needed */
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link :hover {
+    background-color:rgba(128, 128, 128, 0.096);
+}
+
+.horizontal {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ column-gap: 20px;
+}
+

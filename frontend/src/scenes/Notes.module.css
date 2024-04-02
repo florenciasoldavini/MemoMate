@@ -1,0 +1,7 @@
+.notes {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 50px;
+}
